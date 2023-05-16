@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Manrope:wght@400;700&family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comme:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/form.css" />
+    <script defer src="script.js"></script>
+    <title>Currency calculator</title>
+  </head>
+  <body>
+    <header class="header">Currency calculator</header>
+    <form class="form"></form>
+    <fieldset class="form__fieldset">
+      <legend>Calculate</legend>
+      <input
+        type="number"
+        class="form__input"
+        id="js-amount"
+        placeholder="Amount (PLN)"
+        min="1"
+        required
+      />
+      <input
+        type="number"
+        class="form__input form__input--display"
+        id="js-customCurrency"
+        placeholder="Worth of currency in PLN"
+        min="0.01"
+        required
+      />
+      <br />
+      <select class="form__select">
+        <option>EUR</option>
+        <option>GBP</option>
+        <option>USD</option>
+        <option>Custom currency</option>
+      </select>
+      <button id="js-submit" class="form__button">Calculate</button>
+      <p class="fieldset__paragraph">Result:</p>
+      <p class="fieldset__paragraph" id="js-result">
+        Enter data
+      </p>
+    </fieldset>
+
+    <fieldset class="form__fieldset">
+      <legend>Info</legend>
+      <p class="fieldset__paragraph">Exchange rates (18.04.2023):</p>
+      <p class="fieldset__paragraph">EUR: 4.63PLN</p>
+      <p class="fieldset__paragraph">USD: 4.24PLN</p>
+      <p class="fieldset__paragraph">GBP: 5.24PLN</p>
+    </fieldset>
+  </body>
+</html>

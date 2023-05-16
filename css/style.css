@@ -1,0 +1,16 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+::after,
+::before {
+  box-sizing: inherit;
+}
+
+body {
+  background-image: url(../images/tlo.jpg);
+  background-size: cover;
+  margin: auto;
+  max-width: 1000px;
+}

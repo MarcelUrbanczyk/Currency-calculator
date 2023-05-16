@@ -1,0 +1,12 @@
+.header {
+    backdrop-filter: blur(5px);
+    background: rgba(82, 212, 82, 0.716);
+    border-radius: 12px;
+    color: white;
+    font-size: 72px;
+    font-family: "Comme";
+    margin: 20px 0;
+    padding: 15px;
+    text-align: center;
+    -webkit-text-stroke: 2px black;
+  }

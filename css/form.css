@@ -1,0 +1,32 @@
+.form__fieldset {
+    background: white;
+    border-radius: 12px;
+    border-color: black;
+    border: 3px solid black;
+    font-size: 24px;
+    font-family: "Ubuntu";
+    margin: 20px 0;
+  }
+  
+  .form__input,
+  .form__select,
+  .form__button {
+    border-radius: 8px;
+    border: 2px solid black;
+    margin: 5px;
+    padding: 8px;
+  }
+  
+  .form__button {
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .form__button:hover {
+    background: lightgrey;
+  }
+  
+  .form__input--display {
+    display: none;
+  }
+  
