@@ -16,6 +16,10 @@
     margin: 5px;
     padding: 8px;
   }
+
+  .form__select{
+    width: 205px;
+  }
   
   .form__button {
     cursor: pointer;
